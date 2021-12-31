@@ -3168,12 +3168,12 @@ nav {
   position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1039px;
-      grid-template-columns: 1039px;
-  -ms-grid-rows: 897px;
-      grid-template-rows: 897px;
-  left: -516px;
-  top: 54px;
+  -ms-grid-columns: 878px;
+      grid-template-columns: 878px;
+  -ms-grid-rows: 676px;
+      grid-template-rows: 676px;
+  left: -512px;
+  top: 221px;
   z-index: -2;
 }
 
@@ -3373,7 +3373,7 @@ nav {
 }
 
 .serveces-catagroy {
-  margin-top: 130px;
+  margin-top: 40px;
 }
 
 .smal-version {
