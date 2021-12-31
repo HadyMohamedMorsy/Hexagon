@@ -1,0 +1,582 @@
+// Home Page
+.home-page{
+    width: 100%;
+    .slider-show{
+        padding-top: 49px;
+        .carousel-images{
+            img{
+                width: 100%;
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
+            .curosel-pointer{
+                position: absolute;
+                bottom: 20px;
+                @include flexCenter;
+                width: 100%;
+                cursor: pointer;
+                .pointer{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $black;
+                    margin-left: 5px;
+                    &.active{
+                        background-color: $gold;
+                    }
+                }
+            }
+        }
+        .right{
+            position: absolute;
+            right: 5%;
+            top: 42%;
+            @include breakepoint-down(small) {
+                top: 30%;
+            }
+            color: $gold;
+            cursor: pointer;
+            img{
+                width: 51px;
+                height: 44px;
+            }
+        }
+        .left{
+            position: absolute;
+            left: 5%;
+            top: 42%;
+            @include breakepoint-down(small) {
+                top: 30%;
+            }
+            color: #C59100;
+            cursor: pointer;
+            img{
+                width: 51px;
+                height: 44px;
+    
+            }
+        }
+        .image-under-slider{
+            @include breakepoint-down(small){
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @include breakepoint-down(small){
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    // slide show
+    .about-us{
+        padding-top: 175px;
+        @media (max-width : 991px) {
+            padding-top: 30px;
+        }
+        .Content-about{
+            @include flexCenterColumn;
+            
+        }
+        .buttons-About-Us{
+            margin-top: 160px;
+            @media (max-width : 991px) {
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    .value{
+        padding-top: 240px;
+        margin-bottom: 360px;
+        @media (max-width : 991px) {
+            padding-top: 30px;
+            margin-bottom: 60px;
+        }
+        @include flexCenterColumn;
+        .Value-about-Us{
+            padding-top: 40px;
+            img{
+                margin-top: 110px;
+                @media (max-width : 991px) {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .services{
+        text-align: center;
+        @include flexCenterColumn;
+        .spacing-sevices{
+            margin-top: 95px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+    
+    .our-catagroy{
+        padding-top: 160px;
+        @include flexCenterColumn;
+        @media (max-width : 991px) {
+            padding-top: 0px;
+        }
+        .grid-trigger-catagroy{
+            margin-top: 175px;
+            @media (max-width : 991px) {
+                margin-top: 0px;
+            }
+            .section{
+                margin-top: -105px;
+                @include breakepoint-down(lg) {
+                    margin-top: 0px;
+                }
+            }
+            .First-trigger{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &:hover{
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+            }
+            .secound-trigger{
+                margin-top: -30px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &:hover{
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+            }
+            .Thired-trigger{
+                margin-top: -30px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &:hover{
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+            }
+        }
+    
+    }
+    
+    .Our-process{
+        padding-top: 437px;
+        @include flexCenterColumn;
+        @media (max-width : 991px) {
+            padding-top: 30px;
+        }
+        .prcoess{
+            margin-top: 140px;
+            padding-bottom: 100px;
+            @media (max-width : 991px) {
+                margin-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .row{
+                .image-proces{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+    .Our-partneer{
+        padding-top: 771px;
+        @include flexCenterColumn;
+        @media (max-width : 1024px) {
+            padding-top: 30px;
+        }
+        .iclude-image{
+            width: 100%;
+            @media (min-width : 991px) {
+                @include include-image;   
+            }
+            @media (max-width : 767px) {
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , center , webkit o ms);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @media (max-width : 767px) {
+                    width: 60%;
+                }
+            }
+        }
+
+        .iclude-image-duo{
+            width: 100%;
+            @media (min-width : 991px) {
+                @include include-image-duo;                
+            }
+            @media (max-width : 767px) {
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , center , webkit o ms);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @media (max-width : 767px) {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    
+    .Clients{
+        padding-top: 189px;
+        @include flexCenterColumn;
+        @media (max-width : 1024px) {
+            padding-top: 70px;
+        }
+        .iclude-image{
+            width: 100%;
+            @media (min-width : 991px) {
+                @include include-image;   
+            }
+            @media (max-width : 767px) {
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , center , webkit o ms);
+            }
+            img{
+                width: 100%;
+                @media (max-width : 767px) {
+                    width: 60%;
+                }
+                height: 100%;
+            }
+        }
+        .iclude-image-duo{
+            width: 100%;
+            @media (min-width : 991px) {
+                @include include-image-duo;   
+            }
+            @media (max-width : 767px) {
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , center , webkit o ms);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @media (max-width : 767px) {
+                    width: 60%;
+                }
+            }
+        }
+        
+    }
+    
+    .Mediahub{
+        @include flexCenterColumn;
+        @media (max-width : 991px) {
+            padding-top: 40px;
+            margin-top: 30px;
+        }
+        margin-top: 450px;
+        .speciall-tag{
+            margin-top: 175px;
+        }
+        .blog-latest-person{
+            margin-top: 105px;
+            margin-bottom: 120px;
+            .spacing-sepecial-blog{
+                @include breakepoint-down(mid) {
+                    margin-bottom: 160px;
+                }
+            }
+            .image-person{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .news{
+        padding-top: 146px;
+        @include flexCenterColumn;
+        @media (max-width : 991px) {
+            padding-top: 0px;
+        }
+        .news-last{
+            margin-top: 140px;
+            .image-news{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .contact{
+        @include flexCenterColumn;
+        padding-top: 160px;
+        .Image-map-parent{
+            margin-top: 154px;
+            .image-map{
+                width: 100%;
+                @media (max-width : 991px) {
+                    @include prefix(display , flex , webkit o ms);
+                    @include prefix(justify-content , center , webkit o ms);
+                    @include prefix(align-items , center , webkit o ms);
+                }
+                iframe{
+                    width: 100%;
+                    @media (max-width : 991px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        div{
+            .submitted{
+                width: 100%;
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , flex-end , webkit o ms);
+                @media (max-width :991px) {
+                    @include prefix(justify-content , center , webkit o ms);
+                }
+                .image-submited{
+                    cursor: pointer;
+                    position: relative;
+                    @include flexCenter;
+                    img{
+                        @media (max-width : 991px) {
+                            width: 80%;
+                        }
+
+                    }
+                    input{
+                        background-color: transparent;
+                        color: $white;
+                        position: absolute;
+                        outline: none;
+                        border: none;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 40px;
+                        left: -25px;
+                        @media (max-width : 991px) {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        form::before{
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            top:-30px;
+            left:-5px;
+            background-color: $gold;
+
+            @media (max-width : 991px) {
+                display: none;
+            }
+        }
+    
+    .contact-icons{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .links-social-media{
+            a{
+                color: $white;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    }
+    
+
+    .Work{
+        padding-top: 468px;
+        @include flexCenterColumn;
+
+        @media (max-width : 991px) {
+            padding-top: 60px;
+        }
+        .form-cv{
+            margin-top: 85px;
+            .include-file{
+                position: absolute;
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                z-index: 100;
+                @include prefix(display , flex , webkit o ms);
+                @include prefix(justify-content , flex-end , webkit o ms);
+                .attatched{
+                    width: 60%;
+                }
+                .Browse{
+                    width: 40%;
+                    background-color: $gold;
+                    color: $white;
+                    font-size: 40px;
+                    @media (max-width : 991px) {
+                        font-size: 28px;
+                        width: 40%;
+                    }
+                    outline: none;
+                    border: 2px solid $gold;
+                }
+            }
+            
+        }
+    }
+}
+// Home Page
+
+
+
+
+
+
+
+// disabled input
+
+.form-control:disabled,
+.form-control[readonly]{
+    background-color: $white;
+}
+
+// disabled input
+
+
+.animation-scroll{
+    &.active{
+        .First-trigger{
+            .one{
+                cursor: pointer;
+                @include prefix(transform , translateY(0px) , webkit o ms);
+            }
+        }
+        .secound-trigger{
+            .one{
+                cursor: pointer;
+                @include prefix(transform , translateX(0px) , webkit o ms);
+            }
+            .two{
+                cursor: pointer;
+                @include prefix(transform , translateX(0px) , webkit o ms);
+            }
+        }
+    
+        .Thired-trigger{
+            .one{
+                cursor: pointer;
+                @include prefix(transform , translateY(0px) , webkit o ms);
+            }
+            .two{
+                cursor: pointer;
+                @include prefix(transform , translateY(0px) , webkit o ms);
+            }
+            .three{
+                cursor: pointer;
+                @include prefix(transform , translateY(0px) , webkit o ms);
+            }
+        } 
+    }
+    .First-trigger{
+        .one{
+            cursor: pointer;
+            @include prefix(transform , translateY(-100px) , webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+    }
+    .secound-trigger{
+        .one{
+            cursor: pointer;
+            @include prefix(transform , translateX(-1000px) , webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+        .two{
+            cursor: pointer;
+            @include prefix(transform , translateX(1000px) , webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+    }
+
+    .Thired-trigger{
+        .one{
+            cursor: pointer;
+            @include prefix(transform , translateX(-1000px) , webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+        .two{
+            cursor: pointer;
+            @include prefix(transform , translateY(100px) ,webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+        .three{
+            cursor: pointer;
+            @include prefix(transform , translateX(1000px) , webkit o ms);
+            @include prefix(transition , all 2s , webkit o ms);
+        }
+    }
+
+}
+
+
+// submitted
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img{
+        position:relative;
+    }
+    input{
+        cursor: pointer;
+        color: $white;
+        background-color: transparent;
+        position: absolute;
+        outline: none;
+        border: none;
+        font-size: 40px;
+        margin-left: -50px;
+    }
+}
+
+.more-padding-content{
+    @media (max-width : 991px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}

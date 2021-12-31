@@ -1,0 +1,11 @@
+.header-Page{
+    grid-area: Header-Home;
+}
+
+// edit navbar bootstrap menu 
+.navbar-light {
+    .navbar-toggler-icon{
+        background-image: url('http://localhost/hexagon-wordpress/wp-content/themes/Hexagon./assets/css/img/list-ul-solid.svg');
+    }
+
+}
