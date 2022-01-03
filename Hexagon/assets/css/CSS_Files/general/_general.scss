@@ -1875,7 +1875,7 @@ nav{
 // the same shapes about and services
 .service-fixed-first{
     @media (max-width : 1139px){
-        left: -180px;
+        left: -270px;
         grid-template-columns: repeat(12, 278px);
         grid-template-rows: 240px;
     } 
@@ -2052,14 +2052,14 @@ nav{
 .service-fixed-third-right-services{
     position: absolute;
     right: 60px;
-    top: -225px;
+    top: -128px;
     z-index: -2;
     display: grid;
     grid-template-columns: 450px;
     grid-template-rows: 415px;
     @media (max-width : 991px){
-        right: 0px;
-        top: -333px;
+        right: 30px;
+        top: -246px;
         display: grid;
         grid-template-columns: 278px;
         grid-template-rows: 240px;
@@ -2099,7 +2099,7 @@ nav{
     grid-template-rows: 415px;
     @media(max-width : 991px){
         right: 60px;
-        top: -473px;
+        top: -283px;
     }
     @media(min-width : 991px){
         display: grid;
@@ -2320,7 +2320,7 @@ nav{
     }
 }
 .serveces-catagroy{
-    margin-top: 40px;
+    margin-top: 150px;
 }
 
 .smal-version{
@@ -2546,7 +2546,6 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 2000;
-    top: 30px;
     @media(max-width : 991px) {
         top: 0px;
     }
@@ -2626,4 +2625,19 @@ nav{
 
 .wpcf7-spinner{
     background-color: $gold;
+}
+.none-left-margin{
+    margin-left: 0px;
+}
+.order-special{
+    @media (max-width: 991px){
+        order: 1;
+    }
+}
+
+
+.order-special-two{
+    @media (max-width: 991px){
+        order: 2;
+    }
 }

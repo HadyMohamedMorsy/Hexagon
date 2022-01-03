@@ -4,7 +4,7 @@ let animation = bodymovin.loadAnimation({
     rederer : 'svg',
     loop : true,
     autoplay : true,
-    path : 'http://localhost/hexagon-wordpress/wp-content/themes/Hexagon/data.json'
+    path : 'https://hexagon-eg.com/wp-content/themes/Hexagon/data.json'
 })
 
 

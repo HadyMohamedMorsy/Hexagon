@@ -13,25 +13,25 @@
 <!-- animation -->
     <div class="container margin-specific-top">
             <div class="buttons-About-Us row justify-content-center parent-image-buttons">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="row  no-gutters">
                             <div class="buttons-area First-button active col-lg-4 " data-click=".interior">
                                 <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257-.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
-                                <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257@2x.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                <img src="<?php echo  get_theme_file_uri('/assets/images/catagroys.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
                                 <div class="content-btn">
                                     <button> INTERIOR </button>
                                 </div>
                             </div>
                             <div class="buttons-area Secound-button col-lg-4"      data-click = ".EXTERIOR">
                             <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257-.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
-                            <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257@2x.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                            <img src="<?php echo  get_theme_file_uri('/assets/images/catagroys.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
                                 <div class="content-btn">
                                     <button> EXTERIOR </button>
                                 </div>
                             </div>
                             <div class="buttons-area Thired-button col-lg-4 "      data-click = ".Construction">
                             <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257-.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
-                            <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257@2x.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                            <img src="<?php echo  get_theme_file_uri('/assets/images/catagroys.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
                                 <div class="content-btn">
                                     <button> CONSTRUCTION SOULUTIONS </button>
                                 </div>
@@ -81,12 +81,12 @@
                                 <img src="<?php echo  get_theme_file_uri('/assets/images/Polygon 31@2x.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                             </div>
                         </div>
-                        <div class="col-lg-6  order-1 text-justify">
+                        <div class="col-lg-6  order-1 text-justify order-special-two">
                             <p class="mt-3  margin-sm">
                                 <?php  the_content(); ?>  
                             </p>
                         </div>
-                        <div class="col-lg-6 position-relative order-2">
+                        <div class="col-lg-6 position-relative order-2 order-special">
                             <div class="service-fixed-third-right-services">
                                 <img src="<?php echo  get_theme_file_uri('/assets/images/Polygon 31@2x.png') ?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                                 <div class="header-mobile">
@@ -135,7 +135,7 @@
                     endwhile; wp_reset_postdata(); endif;
                 ?>
             </div>
-        <div class="padding-top-catagory">
+        <div class="padding-top-catagory container">
             <div class="parent-path spicific-cat-parent">
                 <h2 class="header-color line">
                     Our Categories
@@ -150,7 +150,7 @@
                                 <?php
                                     $terms = get_terms( 'categories' );
                                     foreach ( $terms as $term ) {
-                                        if($term->name == "Exihiptions"){
+                                        if($term->name =="Exhibitions"){
                                             $term_link = get_term_link( $term ); ?>
                                             <div class="buttons-area First-button col-lg-4" data-click= "<?php echo  esc_url( $term_link )?>">
                                                 <img src="<?php echo  get_theme_file_uri('/assets/images/Path 257-.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />

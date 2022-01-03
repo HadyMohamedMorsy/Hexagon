@@ -6,17 +6,17 @@ uploadfile.addEventListener('click',function(){
     upload.click();
 });
 
-let parentelementsImg = document.querySelectorAll('.parent-elements .img');
-let white = document.querySelector('.white');
+// let parentelementsImg = document.querySelectorAll('.parent-elements .img');
+// let white = document.querySelector('.white');
 
-window.addEventListener('load',function(){
-        parentelementsImg.forEach(function(item) {
-            item.style.transform = "translate(0,0)";
-    });
+// window.addEventListener('load',function(){
+//         parentelementsImg.forEach(function(item) {
+//             item.style.transform = "translate(0,0)";
+//     });
 
-    white.style.backgroundColor = "transparent";
-    white.style.zIndex  = "0";
-});
+//     white.style.backgroundColor = "transparent";
+//     white.style.zIndex  = "0";
+// });
 
 let specificinput = document.querySelector('.specific-input');
 
@@ -160,55 +160,55 @@ function myFunction() {
     });
   }
 
-let parentelements = document.querySelectorAll('.parent-elements .img');
+// let parentelements = document.querySelectorAll('.parent-elements .img');
 
 
-parentelements.forEach((item)=>{
+// parentelements.forEach((item)=>{
 
-    let finalselectimges = item.querySelector('.click');
+//     let finalselectimges = item.querySelector('.click');
 
 
-    finalselectimges.addEventListener('click',function(){
+//     finalselectimges.addEventListener('click',function(){
 
-        let linkhere = finalselectimges.parentElement.getAttribute('data-link');
+//         let linkhere = finalselectimges.parentElement.getAttribute('data-link');
 
-        if(linkhere == "Home"){
+//         if(linkhere == "Home"){
 
-            document.querySelector('.spicif-home').style.display = "block";
+//             document.querySelector('.spicif-home').style.display = "block";
 
-            setTimeout(() => {
+//             setTimeout(() => {
 
-                document.getElementById('header').style.display = "none";
+//                 document.getElementById('header').style.display = "none";
                 
-            }, 1000);
+//             }, 1000);
 
-            myFunction();
+//             myFunction();
 
-        }else{
+//         }else{
 
-            window.open(linkhere);
-        }
+//             window.open(linkhere);
+//         }
 
 
 
         
         
 
-    })
+//     })
 
-})
+// })
 
 
-function setactive(x){
+// function setactive(x){
     
-    x.parentElement.classList.add('active');
+//     x.parentElement.classList.add('active');
 
-}
+// }
 
-function moveactiive(x){
+// function moveactiive(x){
 
-    x.parentElement.classList.remove('active');
-}
+//     x.parentElement.classList.remove('active');
+// }
 
 let arrclass = ['.one','.two','.three'];
 

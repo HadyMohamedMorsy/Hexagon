@@ -1,228 +1,228 @@
-.white{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(#fff , 0.7);
-    width: 100%;
-    height: 100%;
-    z-index: 200;
-    transition: all 3s;
-}
-.desktop-view{
-    display: none;
-    @media (min-width : 767px) {
-        display: block;
-    }
-}
-.mobile-view{
-    display: none;
-    @media (max-width : 767px) {
-        display: block;
-    }
-}
-header {
-    grid-area: Header;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    .header{
-        background: url('../../images/WhatsApp\ Image\ 2021-10-31\ at\ 7.03.55\ PM.png');
-        width: 100%;
-        height: 1000px;
-        @include breakepoint-down(small) {
-            height: 100vh;
-        }
-        background-size: cover;
-        background-position: center center;
-        .parent-elements{
-            position: absolute;
-            top: 11%;
-            left: 54%;
-            @include breakepoint-down(small) {
-                top: 34%;
-                left: 58%;
-            }
-            transform: translate(-50%, -10%);
-            .hex-header-left-top{
-                position: absolute;
-                width:29%;
-                left:20vw;
-                transition: all 1.5s;
-                transform: translateX(-750px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 15%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-            .hex-header-mid-top{
-                position: absolute;
-                width:29%;
-                left:33.5vw;
-                transition: all 1.5s;
-                transform: translateY(-450px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 10%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(0 0, 50% 100%, 100% 0);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-            .hex-header-right-top{
-                position: absolute;
-                width:29%;
-                left:47vw;
-                transition: all 1.5s;
-                transform: translateX(750px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 15%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-            .hex-header-left-bottom{
-                position: absolute;
-                width:29%;
-                top:23vw;
-                left:20vw;
-                transition: all 1.5s;
-                transform: translateX(-750px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 10%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-            .hex-header-mid-bottom{
-                position: absolute;
-                width:29%;
-                left:33.5vw;
-                top:23vw;
-                cursor: pointer;
-                transition: all 1.5s;
-                transform: translateY(450px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 10%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(50% 0, 100% 100%, 0 100%);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-            .hex-header-right-bottom{
-                position: absolute;
-                width:29%;
-                left:47vw;
-                top:23vw;
-                transition: all 1.5s;
-                transform: translateX(750px);
-                z-index: -1;
-                &.active{
-                    z-index: 0;
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    z-index: -1;
-                }
-                .click{
-                    background-color: transparent;
-                    width: 70%;
-                    height: 70%;
-                    position: absolute;
-                    top: 10%;
-                    left: 47%;
-                    transform: translateX(-45%);
-                    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-                    cursor: pointer;
-                    z-index: 20;
-                }
-            }
-        }
-    }
-}
+// .white{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(#fff , 0.7);
+//     width: 100%;
+//     height: 100%;
+//     z-index: 200;
+//     transition: all 3s;
+// }
+// .desktop-view{
+//     display: none;
+//     @media (min-width : 767px) {
+//         display: block;
+//     }
+// }
+// .mobile-view{
+//     display: none;
+//     @media (max-width : 767px) {
+//         display: block;
+//     }
+// }
+// header {
+//     grid-area: Header;
+//     display: grid;
+//     grid-template-rows: auto 1fr;
+//     .header{
+//         background: url('../../images/WhatsApp\ Image\ 2021-10-31\ at\ 7.03.55\ PM.png');
+//         width: 100%;
+//         height: 1000px;
+//         @include breakepoint-down(small) {
+//             height: 100vh;
+//         }
+//         background-size: cover;
+//         background-position: center center;
+//         .parent-elements{
+//             position: absolute;
+//             top: 11%;
+//             left: 54%;
+//             @include breakepoint-down(small) {
+//                 top: 34%;
+//                 left: 58%;
+//             }
+//             transform: translate(-50%, -10%);
+//             .hex-header-left-top{
+//                 position: absolute;
+//                 width:29%;
+//                 left:20vw;
+//                 transition: all 1.5s;
+//                 transform: translateX(-750px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 15%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(50% 0, 0 100%, 100% 100%);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//             .hex-header-mid-top{
+//                 position: absolute;
+//                 width:29%;
+//                 left:33.5vw;
+//                 transition: all 1.5s;
+//                 transform: translateY(-450px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 10%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(0 0, 50% 100%, 100% 0);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//             .hex-header-right-top{
+//                 position: absolute;
+//                 width:29%;
+//                 left:47vw;
+//                 transition: all 1.5s;
+//                 transform: translateX(750px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 15%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(50% 0, 0 100%, 100% 100%);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//             .hex-header-left-bottom{
+//                 position: absolute;
+//                 width:29%;
+//                 top:23vw;
+//                 left:20vw;
+//                 transition: all 1.5s;
+//                 transform: translateX(-750px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 10%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//             .hex-header-mid-bottom{
+//                 position: absolute;
+//                 width:29%;
+//                 left:33.5vw;
+//                 top:23vw;
+//                 cursor: pointer;
+//                 transition: all 1.5s;
+//                 transform: translateY(450px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 10%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(50% 0, 100% 100%, 0 100%);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//             .hex-header-right-bottom{
+//                 position: absolute;
+//                 width:29%;
+//                 left:47vw;
+//                 top:23vw;
+//                 transition: all 1.5s;
+//                 transform: translateX(750px);
+//                 z-index: -1;
+//                 &.active{
+//                     z-index: 0;
+//                 }
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: relative;
+//                     z-index: -1;
+//                 }
+//                 .click{
+//                     background-color: transparent;
+//                     width: 70%;
+//                     height: 70%;
+//                     position: absolute;
+//                     top: 10%;
+//                     left: 47%;
+//                     transform: translateX(-45%);
+//                     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+//                     cursor: pointer;
+//                     z-index: 20;
+//                 }
+//             }
+//         }
+//     }
+// }
 

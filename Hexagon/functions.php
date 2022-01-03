@@ -26,7 +26,25 @@ function About(){
 add_action('init' , 'About');
 
 
+function News(){
+    $args = array(
+        'labels' => array(
+            'name' => 'news',
+            'singular_name' => 'news'
+        ),
+        'hierarchical' => true,
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title','editor', 'thumbnail')
 
+    );
+    
+    register_post_type('news', $args);
+
+
+}
+
+add_action('init' , 'News');
 
 // support post thubnail
 

@@ -54,12 +54,12 @@
                                     <img src="<?php echo  get_theme_file_uri('/assets/images/Polygon 31@2x.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                                 </div>
                             </div>
-                            <div class="col-lg-6  order-1 text-justify">
+                            <div class="col-lg-6  order-1 text-justify order-special-two">
                                 <p class="mt-3  margin-sm">
                                     <?php  the_content(); ?>  
                                 </p>
                             </div>
-                            <div class="col-lg-6 position-relative order-2">
+                            <div class="col-lg-6 position-relative order-2 order-special">
                                 <div class="service-fixed-third-right-services">
                                     <img src="<?php echo  get_theme_file_uri('/assets/images/Polygon 31@2x.png') ?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                                     <div class="header-mobile">
@@ -110,6 +110,43 @@
                     ?>
             </div>
 </div>
+    <div class="pt-5 container">
+                <div class="parent-path spicific-cat-parent">
+                    <h2 class="header-color line">
+                        Our Services 
+                        <div class="line-path specicfic-catgroys">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/path.png') ?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
+                        </div>
+                    </h2>
+                </div>
+                <div class="buttons-About-Us row justify-content-center parent-image-buttons">
+                        <div class="col-lg-12">
+                            <div class="row  no-gutters">
+                                <div class="buttons-area First-button  col-lg-4">
+                                    <img src="<?php echo get_theme_file_uri('/assets/images/Path 261.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                    <img src="<?php echo get_theme_file_uri('/assets/images/Path 260.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                    <div class="content-btn">
+                                        <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'interior' ) ) );?>"> INTERIOR </a>
+                                    </div>
+                                </div>
+                                <div class="buttons-area Secound-button col-lg-4">
+                                <img src="<?php echo get_theme_file_uri('/assets/images/Path 261.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                <img src="<?php echo get_theme_file_uri('/assets/images/Path 260.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                    <div class="content-btn">
+                                        <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'EXTERIOR' ) ) );?>"> EXTERIOR </a>
+                                    </div>
+                                </div>
+                                <div class="buttons-area Thired-button col-lg-4 ">
+                                <img src="<?php echo get_theme_file_uri('/assets/images/Path 261.png' )?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                <img src="<?php echo get_theme_file_uri('/assets/images/Path 260.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
+                                    <div class="content-btn">
+                                        <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'construction-soulutions' ) ) );?>"> CONSTRUCTION SOULUTIONS </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
 <?php require_once(__DIR__.'/inc/footer.php'); ?>
 </div>
 <script src="<?php echo  get_theme_file_uri('/assets/js/lottie.js') ?>"></script>

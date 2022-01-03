@@ -16,12 +16,12 @@
                     </h2>
                 </div>
             <div class="buttons-About-Us row justify-content-center parent-image-buttons">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="row  no-gutters">
                                 <?php
                                     $terms = get_terms( 'categories' );
                                     foreach ( $terms as $term ) {
-                                        if($term->name == "Exihiptions"){
+                                        if($term->name =="Exhibitions"){
                                             $term_link = get_term_link( $term ); ?>
                                             <div class="buttons-area First-button col-lg-4" data-click= "<?php echo  esc_url( $term_link )?>">
                                             <img src="<?php echo get_theme_file_uri('/assets/images/Path 257-.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />
@@ -67,7 +67,7 @@
                     </div>
             </div>
             <div class="buttons-About-Us row justify-content-center parent-image-buttons categroys-margin">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="row  no-gutters">
                         <?php
                             $terms = get_terms( 'categories' );
@@ -158,12 +158,12 @@
                                 <img src="<?php echo get_theme_file_uri('/assets/images/Polygon 31@2x.png') ?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                             </div>
                         </div>
-                        <div class="col-lg-6  order-1">
+                        <div class="col-lg-6  order-1 order-special-two">
                             <p class="mt-3  margin-sm text-justify ">
                             <?php  the_content(); ?>
                             </p>
                         </div>
-                        <div class="col-lg-6 position-relative order-2">
+                        <div class="col-lg-6 position-relative order-2 order-special">
                             <div class="service-fixed-third-right-texonemy">
                                 <img src="<?php echo get_theme_file_uri('/assets/images/Polygon 31@2x.png') ?>" alt= " <?php echo get_bloginfo( 'name' )?>" >
                                 <div class="header-mobile">
@@ -252,8 +252,8 @@
                         </div>
                     </h2>
                 </div>
-                <div class="buttons-About-Us row justify-content-center parent-image-buttons">
-                        <div class="col-lg-10">
+                <div class="buttons-About-Us row justify-content-center parent-image-buttons container">
+                        <div class="col-lg-12">
                             <div class="row  no-gutters">
                                 <div class="buttons-area First-button  col-lg-4">
                                     <img src="<?php echo get_theme_file_uri('/assets/images/Path 261.png') ?>" alt = " <?php echo get_bloginfo( 'name' )?>" />

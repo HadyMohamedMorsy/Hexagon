@@ -3,137 +3,12 @@
 <?php get_header(); ?>  
 <!-- create header -->
 <body>
-    <!-- first Look page -->
-        <div class="templete-design overhidden" id="header">
-            <!-- first Look page -->
-            <div class="white"></div>
-            <header id="header">
-                <nav class="desktop-view">
-                    <div class="container">
-                        <div class="row justify-content-between">
-                            <div class="log  col-sm-6 col-lg-6 ">
-                                <?php
-                                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                                    
-                                    if ( has_custom_logo() ) {
-                                        echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                                    } else {
-                                        echo '<h1>' . get_bloginfo('name') . '</h1>';
-                                    }
-                                ?>
-                            </div>
-                            <div class="social-media col-sm-6 col-lg-6 ">
-                                <div class="d-flex">
-                                    <div class="image-icon position-relative">
-                                        <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                        <a href="https://www.facebook.com/Hexagon.designss/">
-                                            <div class="Icon">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="image-icon position-relative">
-                                        <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                        <a href="https://instagram.com/hexagon.designs?utm_medium=copy_link">
-                                            <div class="Icon">
-                                                <i class="fab fa-instagram"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="image-icon position-relative">
-                                        <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                        <a href="mailto:hexagon.designs08@gmail.com">
-                                            <div class="Icon">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <nav class="mobile-view">
-                    <div class="container">
-                        <div class="row justify-content-between">
-                            <div class="log  col-lg-12 d-flex justify-content-between">
-                                <?php
-                                    $custom_logo_id = get_theme_mod( 'custom_logo' );
-                                    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                                        
-                                        if ( has_custom_logo() ) {
-                                            echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                                        } else {
-                                            echo '<h1>' . get_bloginfo('name') . '</h1>';
-                                        }
-                                    ?>
-                                    <div class="social-media">
-                                        <div class="d-flex">
-                                            <div class="image-icon position-relative">
-                                                <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                                <a href="https://www.facebook.com/Hexagon.designss/">
-                                                    <div class="Icon">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="image-icon position-relative">
-                                            <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                                <a href="https://instagram.com/hexagon.designs?utm_medium=copy_link">
-                                                    <div class="Icon">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="image-icon position-relative">
-                                            <img src=" <?php echo  get_theme_file_uri('/assets/images/Soical-media.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>"/>
-                                                <a href="mailto:hexagon.designs08@gmail.com">
-                                                    <div class="Icon">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="header position-relative">
-                    <div class="parent-elements row w-100">
-                            <div class="img hex-header-left-top"  data-link="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact-Us' ) ) );?>">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 85.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click" onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                            <div class="img hex-header-mid-top"  data-link="Home">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 84.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click" onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                            <div class="img hex-header-right-top" data-link="<?php echo esc_url( get_permalink( get_page_by_title( 'about' ) ) );?>">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 86.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click"  onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                            <div class="img hex-header-left-bottom"  data-link="<?php echo esc_url( get_permalink( get_page_by_title( 'Mediahub' ) ) );?>">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 89.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click" onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                            <div class="img hex-header-mid-bottom "  data-link="<?php echo esc_url( get_permalink( get_page_by_title( 'partnter' ) ) );?>">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 88.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click" onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                            <div class="img hex-header-right-bottom"  data-link="<?php echo esc_url( get_permalink( get_page_by_title( 'services' ) ) );?>">
-                                <img src="<?php echo get_theme_file_uri('/assets/images/Group 87.png')?>" alt= " <?php echo get_bloginfo( 'name' )?>">
-                                <div class="click" onmouseover="setactive(this)" onmouseout="moveactiive(this)"></div>
-                            </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-    <!-- first Look page -->
-
+    <div class="content-animation">
+            <div id="anim">
+            </div>
+    </div>
     <!-- home page -->
-        <div class="home-page overhidden spicif-home" id="content">
+        <div class="home-page overhidden" id="content">
             <!-- navbar -->
             <?php require_once(__DIR__.'/inc/nav.php'); ?>
             <!-- navbar -->
@@ -223,7 +98,7 @@
                             </h2>
                         </div>
                         <div class="col-lg-12 mb-5 text-center">
-                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi non ab possimus
+                            <p >Hexa is number six in Greek which symbolizes happiness
                             </p>
                         </div>
                         <div class="tagline-parent">
@@ -416,7 +291,7 @@
                                 <?php
                                     $terms = get_terms( 'categories' );
                                     foreach ( $terms as $term ) {
-                                        if($term->name == "Exihiptions"){
+                                        if($term->name =="Exhibitions"){
                                             $term_link = get_term_link( $term );
                                             echo '<a href="' . esc_url( $term_link ) . '" class="header-images catagroy-head">' . $term->name . '</a>';
                                         }
@@ -812,9 +687,9 @@
                                 </h3>
                             </div>
                     </div>
-                    <form class="container form-cv">
-                        <?php   echo do_shortcode( '[contact-form-7 id="847" title="Contact form 1_copy"]' ); ?>
-                    </form>
+                    <div class="container form-cv">
+                        <?php   echo do_shortcode( '[contact-form-7 id="1158" title="contact-form-2"]' ); ?>
+                    </div>
                 </div>            
             <!-- work -->
 
